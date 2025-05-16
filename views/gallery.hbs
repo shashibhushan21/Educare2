@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ERUDITE EDUCARE LLC</title>
+  {{>headerLinks}}
+  <!-- georgiai gallery Css -->
+  <link rel="stylesheet" href="assets/css/georgia.css">
+</head>
+<!-- Developed by Shashi Bhushan Kumar -->
+
+<body>
+  <!-- preloader area start -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <!-- preloader area end -->
+
+  <!--  search Popup start -->
+  <div class="body-overlay" id="body-overlay"></div>
+  <div class="search-popup" id="search-popup">
+    <form action="index.html" class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search....." />
+      </div>
+      <button class="close-btn border-none">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <!-- Search Popup End -->
+  <main class="page-wrapper">
+    {{>navbar}}
+
+
+
+    <section class="Gallery">
+      <h1>Photo Gallery</h1>
+      <div class="gallery-container">
+        <!-- Gallery Items -->
+        <div class="gallery-item">
+          <img
+            src="https://www.hindustantimes.com/ht-img/img/2024/01/28/1600x900/Ram_Mandir_1706469369604_1706469378890.jpg"
+            alt="Image 1">
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://www.hindustantimes.com/ht-img/img/2024/01/28/1600x900/Ram_Mandir_1706469369604_1706469378890.jpg"
+            alt="Image 2">
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://www.hindustantimes.com/ht-img/img/2024/01/28/1600x900/Ram_Mandir_1706469369604_1706469378890.jpg"
+            alt="Image 3">
+        </div>
+        <div class="gallery-item">
+          <img src="https://www.onindianpath.com/wp-content/uploads/2024/03/Ram-Mandir-Ayodhya-.png" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+          <img src="https://vsourceadmissions.com/upload_data/36161ea49c126ba1e9979deeb7d8fd5c.jpeg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+          <img src="https://vsourceadmissions.com/upload_data/cb94497afdd8dd9ff2ea018ff9cbbc73.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+          <img src="https://vsourceadmissions.com/upload_data/797c745d1c6a0b665965fc36aa5cab0b.jpg" alt="Image 6">
+        </div>
+      </div>
+
+      <!-- Fullscreen Image View -->
+      <div class="fullscreen-view" id="fullscreenView">
+        <button class="close-btn" onclick="closeFullscreen()">×</button>
+        <img id="fullscreenImage" src="" alt="Fullscreen Image">
+      </div>
+
+
+      <script>
+        // Get all gallery items
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const fullscreenView = document.getElementById('fullscreenView');
+        const fullscreenImage = document.getElementById('fullscreenImage');
+
+        // Add click event to each gallery item
+        galleryItems.forEach(item => {
+          item.addEventListener('click', function () {
+            const src = this.src;
+            fullscreenImage.src = src;
+            fullscreenView.style.display = 'flex'; // Show fullscreen view
+          });
+        });
+
+        // Close the fullscreen view
+        function closeFullscreen() {
+          fullscreenView.style.display = 'none';
+        }
+      </script>
+
+    </section>
+
+
+
+  </main>
+
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+    <span class="back-top"><i class="fa fa-angle-up"></i></span>
+  </div>
+  <!-- back to top area end -->
+
+  <!-- Jquery Js -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- magnific popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- wow -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- Nice Select -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- countdown -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- Odomiters -->
+  <script src="assets/js/odometer.min.js"></script>
+  <!-- Viewport Js -->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!-- slick Js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+  <!-- shashi js -->
+  <script src="assets/js/shashi.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

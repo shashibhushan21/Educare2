@@ -1,0 +1,109 @@
+/* Form card */
+.new-about-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.form-card {
+    background: rgba(35, 73, 175, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  .form-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+  }
+  
+  /* Form Layout */
+.new-form-fix{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Group inside rows */
+  .form-groups {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2);
+    outline: none;
+  }
+  
+  .new-about-button{
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #7626c6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* aligns left — use 'center' or 'flex-end' if desired */
+  }
+  
+  button:hover {
+    background-color: #4917a0;
+  }
+  
+  /* Responsive for desktop layout */
+  @media (min-width: 768px) {
+    .form-row {
+      flex-direction: row;
+      gap: 30px;
+    }
+  }
+
+
+.key-points ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+}
+
+.key-points li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chose-area-wrapper .section-title-wrapper {
+    margin-bottom: 20px;
+}
+
+.icon-box-with-text-wrap ul {
+    padding: 0;
+    margin: 0;
+}
+
+.single-icon-box-with-text {
+    margin-bottom: 20px;
+}

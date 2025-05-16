@@ -1,0 +1,156 @@
+<div class="nav-area-wrapper-relative">
+  <nav class="navbar navbar-area navbar-expand-lg navigation-style-02">
+    <div class="container custom-container custom-container-01">
+      <div class="responsive-menu">
+        <div class="logo-wrapper">
+          <a href="/" class="logo">
+            <img src="assets/img/Logos/logo-black.svg" alt="" />
+          </a>
+        </div>
+        <button class="navbar-toggler navbar-bs-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#themeim_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="themeim_main_menu">
+        <ul class="navbar-nav">
+          <li class="menu-item-has-children current-menu-item">
+          <li>
+            <a href="/"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Home
+            </a>
+          </li>
+          </li>
+
+          <li>
+            <a href="/about-us"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              About Us
+            </a>
+          </li>
+
+
+
+          <li class="menu-item-has-children">
+
+            <a href="#"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              study abroad
+            </a>
+            <!-- <a href="#">Pages</a> -->
+            <ul class="sub-menu">
+              <li><a href="/georgia">Georgia Page</a></li>
+              <li><a href="/coming">India</a></li>
+              <li><a href="/coming">Russia</a></li>
+              <li><a href="/coming">Nepal</a></li>
+              <li><a href="/coming">France</a></li>
+              <li><a href="/coming">UK</a></li>
+              <li><a href="/coming">Bangladesh</a></li>
+              <li><a href="/coming">Australia</a></li>
+              <li><a href="/coming">Others</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="/blog"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Blog
+            </a>
+          </li>
+
+          <li>
+            <a href="/gallery"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Gallery
+            </a>
+          </li>
+
+          <li>
+            <a href="/contact-us"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Contact Us
+            </a>
+          </li>
+
+          <li>
+            {{#if user}}
+            <a href="/api/v1/users/logout" id="logoutBtn"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Logout
+            </a>
+            {{else}}
+            <a href="/login"
+              style="color: #fff; transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.4s ease;"
+              onmouseover="this.style.color='#f39c12'; this.style.textDecoration='underline'; this.style.transform='scale(1.07)';"
+              onmouseout="this.style.color='#fff'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+              Login
+            </a>
+            {{/if}}
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="nav-right-content">
+        <div class="btn-wrap">
+
+          <a href="/apply-online" class="btn-common nav-btn"
+            style="padding: 20px 10px; transition: all 0.3s ease; background-color: #f39c12 !important"
+            onmouseover="this.style.backgroundColor='orange'; this.style.border='1px solid white';"
+            onmouseout="this.style.backgroundColor='#f39c12'; this.style.border='';">
+            Live Counselling
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+<script>
+document.getElementById('logoutBtn')?.addEventListener('click', async (e) => {
+    e.preventDefault();
+    try {
+        const response = await fetch('/api/v1/users/logout', {
+            method: 'POST',
+            credentials: 'include'
+        });
+        
+         if (response.redirected) {
+            // If server sent a redirect, follow it
+            window.location.href = response.url;
+        } else {
+            const data = await response.json();
+            if (data.success) {
+                // If server sent a redirectUrl in JSON, use it
+                window.location.href = data.redirectUrl;
+            } else {
+                alert(data.message || 'Logout failed');
+            }
+        }
+
+
+    } catch (error) {
+        console.error('Logout failed:', error);
+    }
+});
+</script>

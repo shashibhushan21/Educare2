@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ERUDITE EDUCARE LLC</title>
+
+  {{>headerLinks}}
+  <!-- Developed by Shashi Bhushan Kumar -->
+</head>
+
+<body>
+
+  <!-- preloader area start -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <!-- preloader area end -->
+
+  <!--  search Popup start -->
+  <div class="body-overlay" id="body-overlay"></div>
+  <div class="search-popup" id="search-popup">
+    <form action="/" class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search....." />
+      </div>
+      <button class="close-btn border-none">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <!-- Search Popup End -->
+
+  <main class="page-wrapper">
+
+    {{>navbar}}
+
+    <section class="logen">
+      <div class="contact-col">
+
+        <h2>Sign Up</h2>
+        <form action="/api/v1/users/register" method="POST" id="signupForm">
+          <input type="text" name="name" placeholder="Enter Your Name">
+          <input type="Email" name="email" placeholder="Enter Email">
+          <input type="number" name="contact" placeholder="Enter Contact number">
+          <input type="text" name="course" placeholder="Enter Course Type">
+          <input type="text" name="country" placeholder="Enter a Country you applying for study">
+          <input type="password" name="password" placeholder="Create  Password">
+          <input type="password" name="confirmPassword" placeholder="Confirm Password">
+          <button type="Sibmit" class="cont-Button">SIGN UP</button>
+        </form>
+        <h5>Already have an account yet?<a href="/login"><span>Log in</span></a></h5>
+      </div>
+
+      <div class="popup" id="popup">
+
+        <img src="https://cdn-icons-png.flaticon.com/128/5610/5610944.png" alt="">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button onclick="closePopup()">Back to Home</button>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            footer area start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    {{>footer}}
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                footer area End Here
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  </main>
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+    <span class="back-top"><i class="fa fa-angle-up"></i></span>
+  </div>
+  <!-- back to top area end -->
+
+  <!-- Jquery Js -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- magnific popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- wow -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- Nice Select -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- countdown -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- Odomiters -->
+  <script src="assets/js/odometer.min.js"></script>
+  <!-- Viewport Js -->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!-- slick Js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+  <!-- shashi js -->
+  <script src="assets/js/shashi.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

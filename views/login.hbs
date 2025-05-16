@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ERUDITE EDUCARE LLC</title>
+  
+  {{>headerLinks}}
+  
+</head>
+
+<body>
+  <!-- preloader area start -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader"></div>
+    </div>
+  </div>
+  <!-- preloader area end -->
+
+  <!--  search Popup start -->
+  <div class="body-overlay" id="body-overlay"></div>
+  <div class="search-popup" id="search-popup">
+    <form action="index.html" class="search-form">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search....." />
+      </div>
+      <button class="close-btn border-none">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <!-- Search Popup End -->
+
+  <main class="page-wrapper">
+    {{>navbar}}
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            login area start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="logen">
+      <div class="contact-col">
+        <h2>Login</h2>
+
+        <!-- Add success message div -->
+        <div id="successMessage" class="alert alert-success" style="display: none;">
+          Registration successful! Please login with your credentials.
+        </div>
+
+        
+        <form id="loginForm" action="/api/v1/users/login" method="POST">
+          <input type="email" name="email" placeholder="Enter Email" required>
+          <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password" required>
+          <button type="submit" class="cont-Button">LOGIN</button>
+          <a href="#">Forgot Your Password ?</a>
+        </form>
+        <h5>Don't have an account yet?<a href="/register"><span>Sign Up</span></a></h5>
+      </div>
+    </section>
+
+    
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        try {
+          const formData = new FormData(e.target);
+          const response = await fetch('/api/v1/users/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              email: formData.get('email'),
+              password: formData.get('password')
+            })
+          });
+
+          if (response.redirected) {
+            // If server sent a redirect, follow it
+            window.location.href = response.url;
+        } else {
+            const data = await response.json();
+            if (data.success) {
+                // If server sent a redirectUrl in JSON, use it
+                window.location.href = data.redirectUrl;
+            } else {
+                alert(data.message || 'Login failed');
+            }
+        }
+        } catch (error) {
+          console.error('Login error:', error);
+          alert('An error occurred during login');
+        }
+      });
+
+      // Check for registration success parameter
+      window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('registered') === 'true') {
+          const successDiv = document.getElementById('successMessage');
+          successDiv.style.display = 'block';
+
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            successDiv.style.display = 'none';
+          }, 5000);
+
+          // Clean URL
+          window.history.replaceState({}, '', '/login');
+        }
+      };
+
+      // Add styles for success message
+      const style = document.createElement('style');
+      style.textContent = `
+      .alert {
+          padding: 15px;
+          margin-bottom: 20px;
+          border: 1px solid transparent;
+          border-radius: 4px;
+      }
+      .alert-success {
+          color: #155724;
+          background-color: #d4edda;
+          border-color: #c3e6cb;
+      }
+`;
+      document.head.appendChild(style);
+    </script>
+
+
+
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            footer area start Here
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    {{>footer}}
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+              footer area End Here
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  </main>
+
+  <!-- back to top area start -->
+  <div class="back-to-top">
+    <span class="back-top"><i class="fa fa-angle-up"></i></span>
+  </div>
+  <!-- back to top area end -->
+
+  <!-- Jquery Js -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- magnific popup -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <!-- wow -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- Nice Select -->
+  <script src="assets/js/jquery.nice-select.js"></script>
+  <!-- countdown -->
+  <script src="assets/js/jquery.countdown.min.js"></script>
+  <!-- Odomiters -->
+  <script src="assets/js/odometer.min.js"></script>
+  <!-- Viewport Js -->
+  <script src="assets/js/viewport.jquery.js"></script>
+  <!-- slick Js -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+  <!-- shashi js -->
+  <script src="assets/js/shashi.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
