@@ -1,6 +1,44 @@
 import { Router } from 'express';
 import {verifyJWT} from '../middleware/auth.middleware.js';
-const router = Router();
+// const router = Router();
+import express from 'express';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const router = express.Router();
+
+router.get('/university/:id', async (req, res) => {
+    try {
+        const universityId = req.params.id;
+        const dataPath = path.join(__dirname, '../../public/data.json');
+        
+        const jsonData = await fs.readFile(dataPath, 'utf8');
+        const universities = JSON.parse(jsonData);
+        
+        const university = universities.find(uni => uni.id === universityId);
+        
+        if (!university) {
+            return res.status(404).render('error', {
+                error: 'University not found',
+                user: res.locals.user
+            });
+        }
+        
+        res.render('universdetails', { 
+            university,
+            user: res.locals.user 
+        });
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).render('error', {
+            error: 'Error loading university details',
+            user: res.locals.user
+        });
+    }
+});
 
 // Middleware to check if the user is authenticated
 router.use(verifyJWT); 

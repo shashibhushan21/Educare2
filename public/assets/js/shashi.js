@@ -101,3 +101,52 @@ for (let i = 0; i < imgBx.length; i++) {
 
 }
 DiffCountry();
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const courseContainer = document.querySelector('.course-area-wrapper .row');
+    
+//     if (!courseContainer) {
+//         console.error('Course container not found');
+//         return;
+//     }
+
+//     fetch('/data.json')
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error(`HTTP error! status: ${response.status}`);
+//             }
+//             return response.json();
+//         })
+//         .then(data => {
+//             if (!data || !Array.isArray(data)) {
+//                 throw new Error('Invalid data format');
+//             }
+
+//             data.forEach(course => {
+//                 const courseItem = document.createElement('div');
+//                 courseItem.className = 'col-sm-6 col-md-6 col-lg-6 col-xl-4';
+//                 courseItem.innerHTML = `
+//                     <div class="single-course-item">
+//                         <div class="thumbnail zoom-in">
+//                             <div class="background-image" style="background-image: url(${course.image});"></div>
+//                         </div>
+//                         <div class="contact">
+//                             <p class="tag">${course.university}</p>
+//                             <h5 class="title">
+//                                 <table>
+//                                     <tr><td>Type</td><td>: ${course.type}</td></tr>
+//                                     <tr><td>Grade</td><td>: ${course.grade}</td></tr>
+//                                     <tr><td>Year</td><td>: ${course.estdYear}</td></tr>
+//                                 </table>
+//                             </h5>
+//                         </div>
+//                     </div>
+//                 `;
+//                 courseContainer.appendChild(courseItem);
+//             });
+//         })
+//         .catch(error => {
+//             console.error('Error:', error);
+//             courseContainer.innerHTML = '<div class="col-12"><p>Error loading university data</p></div>';
+//         });
+// });

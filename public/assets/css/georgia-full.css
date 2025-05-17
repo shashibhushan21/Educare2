@@ -3,9 +3,13 @@ body {
     color: var(--heading-color);
     font-family: var(--body-font);
     font-size: 14px;
+
 }
 
 /* Header */
+main{
+     padding: 2rem 4rem;
+}
 header {
     background: linear-gradient(135deg, #2c3e50, #34495e);
     color: #fff;
@@ -26,6 +30,10 @@ header::after {
     transform: skewX(-30deg);
     animation: slideLight 5s linear infinite;
 }
+.Global-Career h2{
+    font-size: 1.7rem;
+    white-space: nowrap;
+}
 
 @keyframes slideLight {
     0% { left: -100%; }
@@ -38,7 +46,7 @@ section {
     max-width: 100%;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(52, 151, 118, 0.142) ;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     opacity: 0;

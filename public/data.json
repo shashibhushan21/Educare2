@@ -1,17 +1,110 @@
 [
+
+    
     {
-      "university": "University of Georgia",
+      "id": "uni1",
+      "university": "ALTE University",
+      "course": "Bachelor of Computer Science, Tbilisi, Georgia",
       "type": "Private",
-      "grade": "A+",
-      "estdYear": "2001",
-      "ecfmg": "Approved",
-      "intake": "Feb-25, Sep-25",
-      "fees": "₹ 45.55 Lacs",
-      "medium": "English, Georgian",
-      "duration": "5.8 Yrs of MD, Incl. of Internship",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.z-P-9MtS9NLlbPAZbLI2aAAAAA&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+      "approved": "National Center for Educational Quality Enhancement (NCEQE)",
+      "intake": "March-25, Sep-25",
+      "fees": "3000 USD",
+      "medium": "English",
+      "awarded": "Bachelor of Computer Science",
+      "duration": "4 Years of  Bachelor of Computer Science",
+      "eligibility": "50% in PCM (Physics Chemistry & Maths) in 12th Grade",
+      "IELTS": "Not Required",
+      "recognition":" Georgian Ministry of Education, European University Association (EUA), National Center for Education Quality Enhancement ",
+      "about": "Alte University is a private higher education institution located in Tbilisi, Georgia. Established in 2002, it was formerly known as Tbilisi Open University before rebranding in 2021. The name Alte signifies altitude or highest point, reflecting the university's commitment to continuous development and excellence .",
+      "image": "http://cloudfront.bernews.com/wp-content/uploads/2011/04/800px-GSU2.JPG",
+      "video": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+      "tuitionfees":[
+       {
+        "year": "Year 1",
+        "amount": "$3000"
+      },
+      {
+        "year": "Year 2",
+        "amount": "$3000"
+      },
+      {
+        "year": "Year 3",
+        "amount": "$3000"
+      },
+      {
+        "year": "Year 4",
+        "amount": "$3000"
+      }
+    ],
+    "campus": [
+      "● Multicultural Community – Students from over 32 countries create a dynamic and inclusive environment",
+      "● 🏛 Modern Facilities – Smart classrooms, labs, libraries, lounges, and recreational zones",
+      "● CAFETERIA is a wonderful space to spend your lunch break, meet every member oncampus, and simply try different types of cuisine.",
+      "● 🤝 Student Clubs & Societies – Engage in arts, science, tech, and culture",
+      "● 🧘 Wellness Services – Mental health counseling, academic support, and mentorship",
+      "● 🎉 Vibrant Events – Cultural festivals, seminars, sports competitions, and workshops",
+      "● 💼 Career Services – Internships, career counselling, and job fairs through 200+ industry partners"
+    ]
+
+
     },
+
+     {
+      "id": "uni2",
+      "university": "ALTE University",
+      "course": " Medical Doctor (MBBS) Bachelor Georgia ",
+      "type": "Private",
+      "approved": "ECFMG, Medical council of India, WHO ",
+      "intake": "March-25, Sep-25",
+      "fees": "5500 USD",
+      "medium": "English",
+      "awarded": "Medical doctor (MD) equivalent to MBBS",
+      "duration": "6 Years of  Medical Doctor  (MBBS), Including of internship",
+      "eligibility": "50% in PCB in 12th Grade and NEET Qualified in last 3 only for Indian students)",
+      "IELTS": "Not Required",
+      "recognition":"  NMC (medical council of india), World Health Organization (WHO), Educational Commission for Foreign Medical Graduates (ECFMG), General Medical Council of the UK World Federation for Medical Education (WFME), Georgian Ministry of Health, Georgian Ministry of Education, European University Association (EUA), Association of Medical Schools in Europe (AMSE), National Center for Education Quality Enhancement ",
+      "about":"The International School of Medicine at Alte University provides exceptional training and quality education to all its students. More than 2500 students from across 45 countries choose Alte University to pursue different courses including medicine. The management strives to facilitate research activities that enable students to apply innovative ideas in real life. With the help of interdisciplinary collaborations, Alte University fosters growth and confidence amongst future physicians. The university does not just aim to educate students, but it also aims to address local, and national challenges about medicine by creating positive changes in the medical field.",
+      "image": "https://www.4sstudyabroad.com/wp-content/uploads/2022/02/Tbilisi-Open-University.png",
+      "video": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+      "tuitionfees":[
+       {
+        "year": "Year 1",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 2",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 3",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 4",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 5",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 6",
+        "amount": "5500 USD"
+      }
+      
+    ],
+     "campus": [
+      "● Multicultural Community – Students from over 32 countries create a dynamic and inclusive environment",
+      "● 🏛 Modern Facilities – Smart classrooms, labs, libraries, lounges, and recreational zones",
+      "● CAFETERIA is a wonderful space to spend your lunch break, meet every member oncampus, and simply try different types of cuisine.",
+      "● 🤝 Student Clubs & Societies – Engage in arts, science, tech, and culture",
+      "● 🧘 Wellness Services – Mental health counseling, academic support, and mentorship",
+      "● 🎉 Vibrant Events – Cultural festivals, seminars, sports competitions, and workshops",
+      "● 💼 Career Services – Internships, career counselling, and job fairs through 200+ industry partners"
+    ]
+
+    },
+    
     {
       "university": "Harvard University",
       "type": "Private",
