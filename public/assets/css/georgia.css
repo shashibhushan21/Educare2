@@ -55,9 +55,9 @@
     height: 50vh;
     width: 100%;
     background: var(--paragraph-color);
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.6)),
-     url(https://s-i.huffpost.com/gen/3991424/images/o-DOCTOR-facebook.jpg);
-    background-position: center;
+    background-image:linear-gradient(rgba(4, 9, 30, 0.46),rgba(4,9,30,0.36)),
+     url(https://res.cloudinary.com/dti6nkgxf/image/upload/v1747469604/Screenshot_2025-05-17_131821_uemeoi.png);
+    background-position:bottom center;
     background-size: cover;
     position: relative;
   }
@@ -113,8 +113,20 @@
   #top-study h1{
     font-size: 30px;
     font-weight:700;
-    color: var(--paragraph-color);
-    margin-top: 10px;
+    color: var(--main-color-one);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  #top-study p{
+     font-size: 16px;
+    font-weight:500;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #top-study-content{
     display: flex;
@@ -209,14 +221,15 @@
 }
 
 #left-div {
-    background-color: #f9f9f9;
+    background-color: #d5e4f6;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #left-div h2 {
-    color: #555;
-    font-size: 1.3rem;
+    color: #443;
+    font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 15px; 
 }
@@ -236,9 +249,11 @@
 }
 
 #right-div {
-    background-color: #f9f9f9;
+    background-color: #d5e4f6;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
 }
 
 #application-form h2 {
