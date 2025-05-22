@@ -104,8 +104,7 @@
     ]
 
     },
-    
-    {
+     {
       "university": "Harvard University",
       "type": "Private",
       "grade": "A+",
@@ -352,5 +351,6 @@
       "image": "https://tse3.mm.bing.net/th?id=OIP.CwN242OsteEEmha5_KR42QHaEK&pid=Api&P=0&h=180",
       "video": "https://www.youtube.com/watch?v=sPiZbxwATgE"
     }
+   
   ]
   
