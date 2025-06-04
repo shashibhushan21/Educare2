@@ -3,6 +3,9 @@
     
     {
       "id": "uni1",
+      "Stream": "Engineering",
+      "country": "Georgia",
+      "degree": "bechelor",
       "university": "ALTE University",
       "course": "Bachelor of Computer Science, Tbilisi, Georgia",
       "type": "Private",
@@ -51,6 +54,9 @@
 
      {
       "id": "uni2",
+      "Stream": "Medical",
+      "country": "Georgia",
+       "degree": "bechelor",
       "university": "ALTE University",
       "course": " Medical Doctor (MBBS) Bachelor Georgia ",
       "type": "Private",
@@ -104,253 +110,64 @@
     ]
 
     },
-     {
-      "university": "Harvard University",
+
+      {
+      "id": "uni3",
+      "Stream": "Medical",
+      "country": "Georgia",
+       "degree": "bechelor",
+      "university": "ALTE University",
+      "course": " Medical Doctor (MBBS) Bachelor Georgia ",
       "type": "Private",
-      "grade": "A+",
-      "estdYear": "1636",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Jul-25",
-      "fees": "₹ 55 Lacs",
+      "approved": "ECFMG, Medical council of India, WHO ",
+      "intake": "March-25, Sep-25",
+      "fees": "5500 USD",
       "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.huH3jMFWvJr6e0ubvP436gHaB-&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=5zNXDCxVQ2Y"
-    },
-    {
-      "university": "Stanford University",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1885",
-      "ecfmg": "Approved",
-      "intake": "Mar-25, Sep-25",
-      "fees": "₹ 60 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.IAMXYbUgGruk0agNuyCvPgHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=H8S_2ubQaYM"
-    },
-    {
-      "university": "University of Oxford",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1096",
-      "ecfmg": "Approved",
-      "intake": "Oct-25, Mar-25",
-      "fees": "₹ 25 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=8T2vFQLJ7kY"
-    },
-    {
-      "university": "University of Cambridge",
-      "type": "Public",
-      "grade": "A+",
-      "estdYear": "1209",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Oct-25",
-      "fees": "₹ 28 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=ylZcJlXIhL0"
-    },
-    {
-      "university": "Massachusetts Institute of Technology",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1861",
-      "ecfmg": "Approved",
-      "intake": "Aug-25, Dec-25",
-      "fees": "₹ 54 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=7M8t3_vhD1A"
-    },
-    {
-      "university": "University of California, Berkeley",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1868",
-      "ecfmg": "Approved",
-      "intake": "Feb-25, Sep-25",
-      "fees": "₹ 41 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=YyzFnd0pCVY"
-    },
-    {
-      "university": "University of Melbourne",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1853",
-      "ecfmg": "Approved",
-      "intake": "Mar-25, Oct-25",
-      "fees": "₹ 35 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=ndpWzPQzGm0"
-    },
-    {
-      "university": "University of Sydney",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1850",
-      "ecfmg": "Approved",
-      "intake": "Mar-25, Oct-25",
-      "fees": "₹ 37 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=gBHLyPhQHSo"
-    },
-    {
-      "university": "University of Toronto",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1827",
-      "ecfmg": "Approved",
-      "intake": "Sep-25, Jan-25",
-      "fees": "₹ 32 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=0q39jOSp5gM"
-    },
-    {
-      "university": "Yale University",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1701",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Aug-25",
-      "fees": "₹ 57 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=_n3GfZ5B11k"
-    },
-    {
-      "university": "Johns Hopkins University",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1876",
-      "ecfmg": "Approved",
-      "intake": "Sep-25, Mar-25",
-      "fees": "₹ 62 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=vevvCwaPS5o"
-    },
-    {
-      "university": "Columbia University",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1754",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Oct-25",
-      "fees": "₹ 60 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=EdmjC0TSzZs"
-    },
-    {
-      "university": "Princeton University",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1746",
-      "ecfmg": "Approved",
-      "intake": "Sep-25, Feb-25",
-      "fees": "₹ 58 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=ROt4wG2RaaM"
-    },
-    {
-      "university": "University of Chicago",
-      "type": "Private",
-      "grade": "A+",
-      "estdYear": "1890",
-      "ecfmg": "Approved",
-      "intake": "Mar-25, Oct-25",
-      "fees": "₹ 63 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=aY5SxK8xxzs"
-    },
-    {
-      "university": "Imperial College London",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1907",
-      "ecfmg": "Approved",
-      "intake": "Sep-25, Jan-25",
-      "fees": "₹ 30 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=JH2-Vy3ZtbM"
-    },
-    {
-      "university": "London School of Economics and Political Science",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1895",
-      "ecfmg": "Approved",
-      "intake": "Oct-25, Mar-25",
-      "fees": "₹ 35 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=d22_q2yXh9s"
-    },
-    {
-      "university": "University of California, Los Angeles (UCLA)",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1919",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Sep-25",
-      "fees": "₹ 45 Lacs",
-      "medium": "English",
-      "duration": "4 Yrs of MD",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.e1JyozqDmEZPotDDyKiLXAHaE8&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=9d6Xm3e2eYM"
-    },
-    {
-      "university": "University of Hong Kong",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1911",
-      "ecfmg": "Approved",
-      "intake": "Jan-25, Jul-25",
-      "fees": "₹ 40 Lacs",
-      "medium": "English",
-      "duration": "5 Yrs of MD",
-      "image": "https://tse3.mm.bing.net/th?id=OIP.JdbBMmLoN0OdzcEdmqYqPAHaES&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=klY9Fz6mUhs"
-    },
-    {
-      "university": "University of Edinburgh",
-      "type": "Public",
-      "grade": "A",
-      "estdYear": "1582",
-      "ecfmg": "Approved",
-      "intake": "Sep-25, Jan-25",
-      "fees": "₹ 30 Lacs",
-      "medium": "English",
-      "duration": "3 Yrs of MD",
-      "image": "https://tse3.mm.bing.net/th?id=OIP.CwN242OsteEEmha5_KR42QHaEK&pid=Api&P=0&h=180",
-      "video": "https://www.youtube.com/watch?v=sPiZbxwATgE"
+      "awarded": "Medical doctor (MD) equivalent to MBBS",
+      "duration": "6 Years of  Medical Doctor  (MBBS), Including of internship",
+      "eligibility": "50% in PCB in 12th Grade and NEET Qualified in last 3 only for Indian students)",
+      "IELTS": "Not Required",
+      "recognition":"  NMC (medical council of india), World Health Organization (WHO), Educational Commission for Foreign Medical Graduates (ECFMG), General Medical Council of the UK World Federation for Medical Education (WFME), Georgian Ministry of Health, Georgian Ministry of Education, European University Association (EUA), Association of Medical Schools in Europe (AMSE), National Center for Education Quality Enhancement ",
+      "about":"The International School of Medicine at Alte University provides exceptional training and quality education to all its students. More than 2500 students from across 45 countries choose Alte University to pursue different courses including medicine. The management strives to facilitate research activities that enable students to apply innovative ideas in real life. With the help of interdisciplinary collaborations, Alte University fosters growth and confidence amongst future physicians. The university does not just aim to educate students, but it also aims to address local, and national challenges about medicine by creating positive changes in the medical field.",
+      "image": "https://www.4sstudyabroad.com/wp-content/uploads/2022/02/Tbilisi-Open-University.png",
+      "video": "https://www.youtube.com/watch?v=c7XEhXZ_rsk",
+      "tuitionfees":[
+       {
+        "year": "Year 1",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 2",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 3",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 4",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 5",
+        "amount": "5500 USD"
+      },
+      {
+        "year": "Year 6",
+        "amount": "5500 USD"
+      }
+      
+    ],
+     "campus": [
+      "● Multicultural Community – Students from over 32 countries create a dynamic and inclusive environment",
+      "● 🏛 Modern Facilities – Smart classrooms, labs, libraries, lounges, and recreational zones",
+      "● CAFETERIA is a wonderful space to spend your lunch break, meet every member oncampus, and simply try different types of cuisine.",
+      "● 🤝 Student Clubs & Societies – Engage in arts, science, tech, and culture",
+      "● 🧘 Wellness Services – Mental health counseling, academic support, and mentorship",
+      "● 🎉 Vibrant Events – Cultural festivals, seminars, sports competitions, and workshops",
+      "● 💼 Career Services – Internships, career counselling, and job fairs through 200+ industry partners"
+    ]
+
     }
-   
   ]
   

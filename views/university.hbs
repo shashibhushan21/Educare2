@@ -203,61 +203,31 @@
               <div class="widget-wrapper">
                 <div class="single-widget-item">
                   <h4 class="title">Select Stream</h4>
-                  <div class="form">
-                    <div class="form-element">
-                      <select name="stream" id="streamSelect" style="display: none">
-                        <option disabled selected hidden>
-                          Select
-                        </option>
-                        <option value="Canada">Medicine & Health</option>
-                        <option value="London">Hospitality & Sports</option>
-                        <option value="America">Engineering & Technology</option>
-                        <option value="London">Computer Science & IT</option>
-                        <option value="London">Agriculture & Forestry</option>
-                        <option value="London">Art, Design & Culture</option>
-                        <option value="London">Business & Management</option>
-                        <option value="London">Education & Training</option>
-                        <option value="London">Law</option>
-                        <option value="London">Journalism & Media</option>
-                        <option value="London">Humanities</option>
-                        <option value="London">Social Science</option>
-                        <option value="London">Environmental Studies</option>
-                      </select>
-                    </div>
-                  </div>
+                  <select name="stream" id="streamSelect" class="form-select">
+                    <option value="">All Streams</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Medical">Medical</option>
+                  </select>
                 </div>
 
                 <div class="single-widget-item">
                   <h4 class="title">Select Degree</h4>
-                  <div class="form">
-                    <div class="form-element">
-                      <select name="" id="" style="display: none">
-                        <option disabled="" selected="" hidden="">
-                          Select
-                        </option>
-                        <option value="Canada">Bachelor</option>
-                        <option value="America">Master</option>
-                        <option value="London">UG</option>
-                        <option value="London">Others</option>
-                      </select>
-                    </div>
-                  </div>
+                  <select name="degree" id="degreeSelect" class="form-select">
+                    <option value="">All Degrees</option>
+                    <option value="bechelor">Bachelor</option>
+                    <option value="master">Master</option>
+                  </select>
                 </div>
 
-                <div class="btn-wrap" style="margin-right: 10rem; margin-top: 7rem;">
-                  <a href="#" class="btn-common nav-btn"
-                    style="padding: 20px 10px; transition: all 0.3s ease; background-color: #f39c12;"
-                    onmouseout="this.style.backgroundColor='orange'; this.style.border='1px solid white';"
-                    onmouseover="this.style.backgroundColor=''; this.style.border='';">
-                    Apply
-                  </a>
+                <div class="btn-wrap">
+                  <button id="applyFilters" class="btn-common nav-btn">Apply Filters</button>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-8 col-xl-9">
-              <div class="row column-gap-50">
-                <!-- Course items will be dynamically inserted here -->
+              <div class="row column-gap-50" id="courseContainer">
+                <!-- Results will be displayed here -->
               </div>
             </div>
           </div>
@@ -297,7 +267,7 @@
 
 
 
-  
+
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             footer area start Here
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -352,9 +322,11 @@
   <script src="assets/js/main.js"></script>
   <!-- shashi js -->
   <script src="assets/js/shashi.js"></script>
+  <!-- Add before closing body tag -->
+  <script src="assets/js/university-filter.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  
+
   <script>
     $(document).ready(function () {
       $.ajax({
@@ -362,7 +334,7 @@
         method: 'GET',
         dataType: 'json',
         success: function (data) {
-          {{!-- console.log('Data loaded successfully:', data); --}}
+          { { !--console.log('Data loaded successfully:', data); --} }
           var courseContainer = $('.course-area-wrapper .row.column-gap-50');
           courseContainer.empty();
 

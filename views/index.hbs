@@ -1024,7 +1024,37 @@
                 </div>
               </div>
             </div>
+
+
+
+            <script>
+              function DiffCountry() {
+                let imgBx = document.querySelectorAll(".imgBx");
+                let contectBx = document.querySelectorAll(".contentBx");
+
+                for (let i = 0; i < imgBx.length; i++) {
+                  imgBx[i].addEventListener("mouseover", function () {
+                    for (let j = 0; j < contectBx.length; j++) {
+                      contectBx[j].className = 'contentBx';
+                    }
+                    document.getElementById(this.dataset.id).className = 'contentBx active';
+
+
+                    for (let j = 0; j < imgBx.length; j++) {
+                      imgBx[j].className = 'imgBx';
+                    }
+                    this.className = 'imgBx active';
+                  });
+
+                }
+
+              }
+              DiffCountry()
+
+            </script>
+
           </div>
+
 
           <!-- 
           <div class="destination-items-wrap">
@@ -1875,12 +1905,13 @@
           .step {
             width: 100%;
           }
-           .stepcontainer>h1 {
-          font-size: 1.6rem;
-          margin-bottom: 40px;
-          color: #f0db4f;
-          animation: fadeInDown 1s ease-in-out;
-        }
+
+          .stepcontainer>h1 {
+            font-size: 1.6rem;
+            margin-bottom: 40px;
+            color: #f0db4f;
+            animation: fadeInDown 1s ease-in-out;
+          }
 
           .arrow {
             display: block;

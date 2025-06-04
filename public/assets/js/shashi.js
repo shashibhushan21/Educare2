@@ -100,7 +100,7 @@ for (let i = 0; i < imgBx.length; i++) {
 }
 
 }
-DiffCountry();
+// DiffCountry();
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     const courseContainer = document.querySelector('.course-area-wrapper .row');
@@ -150,3 +150,7 @@ DiffCountry();
 //             courseContainer.innerHTML = '<div class="col-12"><p>Error loading university data</p></div>';
 //         });
 // });
+
+
+
+
