@@ -46,6 +46,7 @@ import pageRouter from "./routes/page.routes.js";
 import contactRouter from "./routes/contact.routes.js"; 
 import applicationRouter from "./routes/application.routes.js";
 import aboutRouter from "./routes/about.routes.js";
+import liveCounsellingRouter from "./routes/liveCounselling.routes.js";
 
 // routes declaration
 app.use("/", pageRouter);
@@ -53,6 +54,7 @@ app.use("/api/v1/users", userRouter);
 app.use("/api/v1/contact", contactRouter); 
 app.use("/api/v1/application", applicationRouter);
 app.use("/api/v1/about", aboutRouter);
+app.use("/api/v1/live-counselling", liveCounsellingRouter);
 
 
 export { app };
