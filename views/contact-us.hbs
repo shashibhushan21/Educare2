@@ -50,7 +50,7 @@
             }
         </style>
 
-        <!-- about page start here  -->
+        <!-- contact page start here  -->
         <div class="contact-us-wrapper single-page-section-top-space single-page-section-bottom-space">
             <!-- breadcrumb area start here  -->
             <div class="breadcrumb-wrap style-01">
@@ -60,7 +60,9 @@
                             <div class="breadcrumb-content">
                                 <h3 class="title">Contact us</h3>
                                 <p class="details">
-                                    We have professional <b>Collaborations</b> with top <b>universities and colleges worldwide</b>, ensuring you get the best guidance and opportunities for your academic journey.
+                                    We have professional <b>Collaborations</b> with top <b>universities and colleges
+                                        worldwide</b>, ensuring you get the best guidance and opportunities for your
+                                    academic journey.
                                 </p>
                             </div>
                         </div>
@@ -86,10 +88,15 @@
                                                         <i class="fa-sharp fa-solid fa-location-dot icon"></i>
                                                     </span>
                                                     <br class="text">
-                                                    <ul><li>&#8226; 7 Tsotne Dadiani St, Tbilisi Georgia 1010</li>
-                                                    <li>&#8226; Hari Om shopping Apt, Plot No- 15, Sec- 2, Near Rajiv  Gandhi Bridge, Nerul West, Navi Mumbai MAHARASHTRA 400706</li>
-                                                    <li>&#8226; Bhagwanpur golambar muzaffarpur Bihar India  842001</li>
-                                                    <li>&#8226; 26 Tilja Road, kolkata West Bengal India 700039</li></ul>
+                                                    <ul>
+                                                        <li>&#8226; 7 Tsotne Dadiani St, Tbilisi Georgia 1010</li>
+                                                        <li>&#8226; Hari Om shopping Apt, Plot No- 15, Sec- 2, Near
+                                                            Rajiv Gandhi Bridge, Nerul West, Navi Mumbai
+                                                            MAHARASHTRA 400706</li>
+                                                        <li>&#8226; Bhagwanpur golambar muzaffarpur Bihar India  842001
+                                                        </li>
+                                                        <li>&#8226; 26 Tilja Road, kolkata West Bengal India 700039</li>
+                                                    </ul>
                                                     </span>
                                                 </li>
                                                 <li class="single-address-item">
@@ -134,19 +141,20 @@
                                     </div>
                                     <div class="col-lg-7">
                                         <div class="contact-form">
-                                            <form class="form">
+                                            <form class="form" id="contactForm">
                                                 <div class="part">
                                                     <h5 class="title">Primary Information</h5>
                                                     <div class="form-element">
                                                         <div class="row">
                                                             <div class="col-lg-6">
                                                                 <i class="fa-solid fa-user"></i>
-                                                                <input type="text" placeholder="Full name" required="">
+                                                                <input type="text" name="name" placeholder="Full name"
+                                                                    required>
                                                             </div>
                                                             <div class="col-lg-6">
                                                                 <i class="fa-solid fa-envelope-open"></i>
-                                                                <input type="email" placeholder="Email address"
-                                                                    required="">
+                                                                <input type="email" name="email" placeholder="Email address"
+                                                                    required>
                                                             </div>
 
                                                         </div>
@@ -155,21 +163,22 @@
                                                         <div class="row">
                                                             <div class="col-lg-6">
                                                                 <i class="fa-solid fa-phone"></i>
-                                                                <input type="number" placeholder="Phone number"
-                                                                    required="">
+                                                                <input type="number" name="phone" placeholder="Phone number"
+                                                                    required>
                                                             </div>
                                                             <div class="col-lg-6">
                                                                 <i class="fa-solid fa-user"></i>
-                                                                <input type="text" placeholder="Full Address" required="">
+                                                                <input type="text" name="address" placeholder="Full Address"
+                                                                    required>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-element">
                                                         <div class="row">
                                                             <div class="col-lg-12">
-                                                                <textarea class="textarea"
+                                                                <textarea class="textarea" name="message"
                                                                     placeholder="Write description..."
-                                                                    rows="10"></textarea>
+                                                                    rows="10" required></textarea>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -192,7 +201,10 @@
 
             <!-- map area start hare  -->
             <div class="map-wrapper section-top-space">
-                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160755.81295540382!2d88.37490806172526!3d22.583514641806303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b5f38c67df%3A0x842d73d378313791!2sNicco%20park!5e0!3m2!1sen!2sin!4v1746200303154!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160755.81295540382!2d88.37490806172526!3d22.583514641806303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275b5f38c67df%3A0x842d73d378313791!2sNicco%20park!5e0!3m2!1sen!2sin!4v1746200303154!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <!-- map area end hare  -->
         </div>
@@ -236,6 +248,8 @@
     <script src="assets/js/slick.min.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    {{!-- contact js --}}
+    <script src="assets/js/contact.js"></script>
 
 
 </body>
